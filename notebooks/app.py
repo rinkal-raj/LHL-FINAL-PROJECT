@@ -37,14 +37,14 @@ def predict():
            print(json_)
            query_ = pd.get_dummies(pd.DataFrame(json_))
            query = query_.reindex(columns = model_columns, fill_value= 0)
-           print("[0] Patient has not Heart Dieases")
+           print("[0] Patient does not have Heart Dieases")
            print("[1] Patient has Heart Dieases")
            #print("Query:", query)
 
            prediction = list(log_reg.predict(query))
-           result = "Person does not have heart disease"
+           result = "Patient does not have heart disease"
            if prediction[0] == 1:
-               result = "Person has heart disease"
+               result = "Patient has heart disease"
 
 
            return jsonify({
