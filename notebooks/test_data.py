@@ -13,7 +13,7 @@ json_data = [
     "Age" : 50,
     "Sex" :  1,
     "ChestPainType" : 4,
-    "RestingBP" : 3,
+    "RestingBP" : 130,
     "Cholesterol" : 289,
     "FastingBS" : 1,
     "RestingECG" : 2,
