@@ -39,7 +39,7 @@ def predict():
            query = query_.reindex(columns = model_columns, fill_value= 0)
            print("[0] Patient does not have Heart Dieases")
            print("[1] Patient has Heart Dieases")
-           #print("Query:", query)
+           print("Query:", query)
 
            prediction = list(log_reg.predict(query))
            result = "Patient does not have heart disease"
